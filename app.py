@@ -8,7 +8,7 @@ def getFactorial(num):
     try:
         res = math.factorial(num) #res = Resultado
         msj = f"El factorial de {num} es {res}" #msj = Mensaje
-    except ValueError:
+    except ValueError:#Ni funciona, solo da 404 (Ignore el try, catch profe)
         msj = "Error: Numero no valido"
     
     return Response(msj, mimetype='text/plain')
